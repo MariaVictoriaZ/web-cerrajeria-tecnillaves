@@ -1,8 +1,4 @@
 /* GLOBAL */
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: #111;
@@ -13,6 +9,27 @@ body {
 :root {
   --main-orange: #E55A03;
   --dark-bg: #1f1f1f;
+}
+
+/* NAVBAR subrayado animado */
+.navbar .nav-link {
+  position: relative;
+  font-weight: 500;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--main-orange);
+  transition: width 0.2s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
 }
 
 /* HERO */
@@ -42,6 +59,14 @@ body {
 
 .hero-content {
   max-width: 620px;
+  /* animación de entrada */
+  opacity: 0;
+  transform: translateY(18px);
+  animation: hero-fade-in 0.9s ease-out forwards;
+}
+
+.hero h1 {
+  font-size: clamp(2.1rem, 3vw + 1rem, 3rem);
 }
 
 /* Botón principal del hero usando tu color de marca */
@@ -61,11 +86,23 @@ body {
   .hero {
     min-height: 60vh;
     text-align: left;
-    padding: 3rem 0;
+    padding: 3.5rem 0 3rem;
   }
 
   .hero-content {
     max-width: 100%;
+  }
+}
+
+/* Animación hero */
+@keyframes hero-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -240,4 +277,45 @@ body {
 /* FOOTER */
 .footer {
   background: #111;
+}
+
+/* BOTÓN FLOTANTE WHATSAPP */
+.btn-whatsapp {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  background-color: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+  z-index: 999;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.btn-whatsapp i {
+  font-size: 1.6rem;
+}
+
+.btn-whatsapp:hover {
+  background-color: #20b558;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.45);
+}
+
+/* ANIMACIÓN DE SECCIONES AL HACER SCROLL */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
