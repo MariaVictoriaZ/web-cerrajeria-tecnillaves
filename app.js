@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-const images = [
+  const images = [
     'img/cerradura.jpeg',
     'img/maq.jpeg',
     'img/porton.jpeg',
@@ -9,7 +9,7 @@ const images = [
     'img/llaves.jpeg',
     'img/porton3.jpeg',
     'img/maq3.jpeg'
-];
+  ];
 
   const carouselInner = document.getElementById('carouselInner');
 
@@ -41,7 +41,7 @@ const images = [
         const img = document.createElement('img');
         img.src = images[j];
         img.classList.add('d-block', 'w-100', 'foto-carrusel');
-        img.alt = `Trabajo ${j+1}`;
+        img.alt = `Trabajo de cerrajería ${j + 1} en Tecnillaves`;
 
         col.appendChild(img);
         row.appendChild(col);

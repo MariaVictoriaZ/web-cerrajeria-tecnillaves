@@ -11,6 +11,11 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,40 +24,43 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#inicio">
           <img src="img/logo.png" height="45" alt="Logo Tecnillaves">
         </a>
 
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Abrir menú">
           <span class="navbar-toggler-icon"></span>
-      </button>
+        </button>
 
         <div class="collapse navbar-collapse" id="navMenu">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Servicios</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Reseñas</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li class="nav-item"><a href="#trabajos" class="nav-link">Trabajos</a></li>
+                <li class="nav-item"><a href="#reseñas" class="nav-link">Reseñas</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="#sobre-nosotros" class="nav-link">Sobre nosotros</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
+<main>
+
 <!-- HERO -->
-<header class="hero d-flex align-items-center">
+<header class="hero d-flex align-items-center" id="inicio">
   <div class="container">
     <div class="hero-content text-white">
       <span class="badge bg-light text-dark mb-3">
         Cerrajero en L’Hospitalet de Llobregat
       </span>
 
-      <h1 class="fw-bold display-4 mb-3">
+      <h1 class="fw-bold mb-3">
         Soluciones de cerrajería rápidas y profesionales
       </h1>
 
       <p class="lead mb-4">
-        Aperturas, cerraduras y asesoramiento experto.
+        Aperturas, cerraduras y asesoramiento experto para hogar, comunidad y negocio.
       </p>
 
       <div class="d-flex flex-wrap gap-3 align-items-center">
@@ -61,7 +69,7 @@
           Llamar ahora
         </a>
 
-        <a href="#" class="btn btn-outline-light btn-lg">
+        <a href="https://wa.me/34666636553" target="_blank" rel="noopener" class="btn btn-outline-light btn-lg">
           <i class="bi bi-whatsapp me-2"></i>
           Escribir por WhatsApp
         </a>
@@ -79,7 +87,7 @@
 <!-- POR QUÉ ELEGIRNOS -->
 <section class="p-5 bg-white">
   <div class="container">
-    <h3 class="text-center mb-2 fw-bold">Por qué elegir Cerrajería Tecnillaves</h3>
+    <h2 class="text-center mb-2 fw-bold">Por qué elegir Cerrajería Tecnillaves</h2>
     <p class="text-center text-muted mb-4">
       Cerrajeros de confianza en L’Hospitalet de Llobregat con trato cercano y soluciones rápidas.
     </p>
@@ -133,7 +141,7 @@
   <div class="container">
 
     <div class="text-center mb-4">
-      <h3 class="fw-bold text-white mb-2">Nuestros servicios de cerrajería</h3>
+      <h2 class="fw-bold text-white mb-2">Nuestros servicios de cerrajería</h2>
       <p class="text-light text-opacity-75 mb-0">
         Soluciones profesionales en cerrajería, seguridad y aperturas en L’Hospitalet de Llobregat.
       </p>
@@ -264,14 +272,15 @@
 
 
 <!-- RESEÑAS -->
-<section class="py-5 bg-white">
-    <div class="container">
-        <h3 class="text-center fw-bold mb-4">Reseñas de nuestros Clientes</h3>
-        <!-- Elfsight Google Reviews | Untitled Google Reviews -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-80a69ae5-f86a-474f-bd47-f4be12d573bc" data-elfsight-app-lazy></div>
-    </div>
+<section class="py-5 bg-white" id="reseñas">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Reseñas de nuestros clientes</h2>
+    <!-- Elfsight Google Reviews -->
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-80a69ae5-f86a-474f-bd47-f4be12d573bc" data-elfsight-app-lazy></div>
+  </div>
 </section>
+
 
 <!-- INFORMACIÓN + MAPA -->
 <section class="py-5 bg-light" id="contacto">
@@ -282,9 +291,9 @@
       <div class="col-lg-5">
         <div class="card shadow-sm contact-card h-100">
           <div class="card-body">
-            <h3 class="h5 fw-bold mb-3">Servicio de urgencia 24h</h3>
+            <h2 class="h5 fw-bold mb-3">Servicio de urgencia</h2>
             <p class="text-muted small mb-4">
-              Atendemos en L’Hospitalet de Llobregat y alrededores de forma rápida y profesional.
+              Atendemos en L’Hospitalet de Llobregat y alrededores dentro de nuestro horario de trabajo, con un servicio rápido y profesional.
             </p>
 
             <ul class="list-unstyled mb-0">
@@ -335,12 +344,12 @@
 
 
 <!-- SOBRE NOSOTROS -->
-<section class="about-section text-white py-5">
+<section class="about-section text-white py-5" id="sobre-nosotros">
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-lg-8">
 
-        <h3 class="fw-bold mb-3">Sobre Cerrajería Tecnillaves</h3>
+        <h2 class="fw-bold mb-3">Sobre Cerrajería Tecnillaves</h2>
 
         <p class="about-text mb-4">
           Somos una cerrajería local en L’Hospitalet que apuesta por el trato cercano,
@@ -357,6 +366,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer class="footer py-4 text-center text-white">

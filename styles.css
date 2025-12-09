@@ -1,7 +1,18 @@
+/* GLOBAL */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #111;
+  background-color: #fff;
+}
+
 /* COLOR PRINCIPAL */
 :root {
-    --main-orange: #E55A03;
-    --dark-bg: #1f1f1f;
+  --main-orange: #E55A03;
+  --dark-bg: #1f1f1f;
 }
 
 /* HERO */
@@ -58,17 +69,16 @@
   }
 }
 
-
 /* ICONOS */
 .feature-icon,
 .service-icon {
-    font-size: 2.5rem;
-    color: var(--main-orange);
+  font-size: 2.5rem;
+  color: var(--main-orange);
 }
 
 @media (max-width: 768px) {
-    .feature-icon { font-size: 2rem; }
-    .service-icon { font-size: 2rem; }
+  .feature-icon { font-size: 2rem; }
+  .service-icon { font-size: 2rem; }
 }
 
 /* FEATURES (por qué elegirnos) */
@@ -91,15 +101,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(229, 90, 3, 0.08); /* tu naranja muy suave */
+  background: rgba(229, 90, 3, 0.08);
 }
 
-/* ya tenías esto, pero así queda alineado con el círculo */
 .feature-icon {
   font-size: 2rem;
   color: var(--main-orange);
 }
-
 
 /* SERVICIOS SECTION */
 .services-section {
@@ -121,7 +129,7 @@
   background-color: #333;
 }
 
-/* círculo para iconos de servicios (puedes compartir con features si quieres) */
+/* círculo para iconos de servicios */
 .service-icon-wrapper {
   width: 50px;
   height: 50px;
@@ -136,7 +144,6 @@
   font-size: 1.8rem;
   color: var(--main-orange);
 }
-
 
 /* NUESTROS TRABAJOS */
 .trabajos-section h2 {
@@ -162,7 +169,7 @@
   box-shadow: 0 12px 26px rgba(0,0,0,0.25);
 }
 
-/* Flechas del carrusel (ya tenías algo, te lo dejo redondo y limpio) */
+/* Flechas del carrusel */
 .carousel-control-prev,
 .carousel-control-next {
   width: 44px;
@@ -182,7 +189,6 @@
   filter: invert(1);
 }
 
-
 /* Sección de contacto */
 .contact-card {
   border-radius: 0.75rem;
@@ -201,19 +207,19 @@
 }
 
 .contact-card i {
-  color: #f57c00; /* Puedes cambiarlo por el color de tu marca */
+  color: var(--main-orange);
 }
 
 /* Caja del mapa */
 .map-box {
   border-radius: 0.75rem;
-  overflow: hidden;        /* para que el mapa tenga esquinas redondeadas */
+  overflow: hidden;
   min-height: 320px;
 }
 
 /* SOBRE NOSOTROS (estilo minimal oscuro) */
 .about-section {
-  background: #141414; /* más oscuro que servicios, queda brutal */
+  background: #141414;
 }
 
 .about-text {
@@ -231,8 +237,7 @@
   max-width: 600px;
 }
 
-
 /* FOOTER */
 .footer {
-    background: #111;
+  background: #111;
 }
