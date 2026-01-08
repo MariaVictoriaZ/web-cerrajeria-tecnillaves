@@ -320,17 +320,23 @@ body {
   transform: translateY(0);
 }
 
-/* Forzar navbar blanca siempre */
-.navbar {
-  background-color: #ffffff !important;  /* blanco */
+/* NAVBAR SIEMPRE BLANCA */
+.custom-navbar {
+  background-color: #fff !important;
 }
 
-/* Forzar color de los links en negro */
-.navbar .nav-link {
+.custom-navbar .nav-link {
   color: #111 !important;
 }
 
-/* Forzar color del toggle button (hamburguesa) */
-.navbar .navbar-toggler-icon {
-  filter: invert(0) !important; /* sin invertir */
+.custom-navbar .nav-link:hover {
+  color: var(--main-orange) !important; /* opcional: tu color de hover */
+}
+
+.custom-navbar .navbar-toggler {
+  border-color: #111 !important; /* borde del botón hamburguesa */
+}
+
+.custom-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(17,17,17,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
