@@ -319,3 +319,18 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Forzar navbar blanca siempre */
+.navbar {
+  background-color: #ffffff !important;  /* blanco */
+}
+
+/* Forzar color de los links en negro */
+.navbar .nav-link {
+  color: #111 !important;
+}
+
+/* Forzar color del toggle button (hamburguesa) */
+.navbar .navbar-toggler-icon {
+  filter: invert(0) !important; /* sin invertir */
+}
