@@ -191,7 +191,7 @@ body {
   padding: 0.5rem 0;
 }
 
-/* cada foto como “tarjeta” */
+/*fotos tarjetas */
 .foto-carrusel {
   border-radius: 12px;
   object-fit: cover;
@@ -254,7 +254,7 @@ body {
   min-height: 320px;
 }
 
-/* SOBRE NOSOTROS (estilo minimal oscuro) */
+/* SOBRE NOSOTROS */
 .about-section {
   background: #141414;
 }
@@ -308,7 +308,7 @@ body {
   box-shadow: 0 12px 24px rgba(0,0,0,0.45);
 }
 
-/* ANIMACIÓN DE SECCIONES AL HACER SCROLL */
+/* ANIMACIONES */
 .reveal {
   opacity: 0;
   transform: translateY(24px);
