@@ -320,9 +320,18 @@ body {
   transform: translateY(0);
 }
 
-/* Modo oscuro para logo */
+/* LOGO CLARO / OSCURO */
+.logo-dark {
+  display: none;
+}
+
+/* Cuando el sistema está en modo oscuro */
 @media (prefers-color-scheme: dark) {
-  .navbar-brand .logo {
-    content: url("img/logo-oscuro.png");
+  .logo-light {
+    display: none;
+  }
+
+  .logo-dark {
+    display: inline-block;
   }
 }
