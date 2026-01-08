@@ -319,3 +319,10 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Modo oscuro para logo */
+@media (prefers-color-scheme: dark) {
+  .navbar-brand .logo {
+    content: url("img/logo-oscuro.png");
+  }
+}
