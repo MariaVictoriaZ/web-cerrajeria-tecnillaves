@@ -319,19 +319,3 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
-
-/* LOGO CLARO / OSCURO */
-.logo-dark {
-  display: none;
-}
-
-/* Cuando el sistema está en modo oscuro */
-@media (prefers-color-scheme: dark) {
-  .logo-light {
-    display: none;
-  }
-
-  .logo-dark {
-    display: inline-block;
-  }
-}
