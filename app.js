@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const rect = target.getBoundingClientRect();
       const targetY = rect.top + window.pageYOffset - navHeight;
 
-      smoothScrollTo(targetY, 650);
+      smoothScrollTo(targetY, 10);
 
       // cerrar menú en móvil
       const navbarCollapse = document.getElementById('navMenu');
